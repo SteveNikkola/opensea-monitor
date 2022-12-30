@@ -1,0 +1,15 @@
+CONNECTION_CONFIG = 'connection_config'
+APP_BASE_URL = 'monitor_app_base_url'
+MONITOR_PATH = 'monitor_path'
+
+COLLECTION = 'collection'
+MONITOR_CONFIGS = 'monitor_configs'
+CONTRACT_ADDRESS = 'contract_address'
+EVENT_TYPE = 'event_type'
+MONITOR_ENABLED = 'monitor_enabled'
+INTERVAL_MS = 'interval_ms'
+EVENTS_LIMIT_EACH_CALL = 'events_limit_each_call'
+MAX_EVENTS_TO_GATHER = 'max_events_to_gather'
+DISCORD_WEBHOOK_TOKENS = 'discord_webhook_tokens'
+
+COLLECTION_EVENTS_MONITOR_PATH = 'retrieve_events'

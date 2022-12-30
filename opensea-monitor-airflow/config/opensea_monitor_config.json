@@ -1,0 +1,20 @@
+{
+  "opensea_monitor_config": {
+    "connection_config": {
+      "monitor_app_base_url": "opensea-monitor-api:8080",
+      "monitor_path": "opensea-monitor/monitor/v1"
+    },
+    "monitor_configs": [
+      {
+        "collection": "BAYC",
+        "monitor_enabled": true,
+        "interval_ms": 300000,
+        "contract_address": "0x0000000000000000000000000000000000000000",
+        "event_type": "CREATED",
+        "events_limit_each_call": null,
+        "max_events_to_gather": null,
+        "discord_webhook_tokens": [""]
+      }
+    ]
+  }
+}

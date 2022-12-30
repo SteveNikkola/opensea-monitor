@@ -1,0 +1,40 @@
+management:
+  endpoint:
+    health:
+      enabled: true
+    loggers:
+      enabled: true
+  metrics:
+    export:
+      influx:
+        enabled: false
+  endpoints:
+    enabled-by-default: false
+    web:
+      exposure:
+        include: ["health", "loggers"]
+spring:
+  data:
+    mongodb:
+      uri: mongodb://${MONGO_USER}:${MONGO_PASSWORD}@mongo:27017/?authSource=admin
+      database: opensea-monitor
+      authentication-database: admin
+      auto-index-creation: true
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+    default-property-inclusion: NON_EMPTY
+open-sea:
+  base-url: https://opensea.io
+client:
+  open-sea:
+    api-base-url: https://testnets-api.opensea.io
+    api-base-path: api/v1
+    events-path: events
+    assets-path: assets
+    orderbook:
+      orderbook-base-path: wyvern/v1
+      orders-path: orders
+
+notification:
+  discord:
+    base-url: https://discord.com/api/webhooks
